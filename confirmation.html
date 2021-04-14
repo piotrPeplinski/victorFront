@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- metaDESC, animateCSS,-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/queries.css">
+
+    <title>Confirmation</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <img src="img/logoBlack.png" alt="logo">
+            <ul class="main-nav">
+                <li>
+                    <a class="nav-hide" href="#about">Shop</a>
+                </li>
+                <li>
+                    <a class="nav-hide" href="#cart">Cart</a>
+                </li>
+                <li>
+                    <a class="nav-hide" href="#review">Contact</a>
+                </li>
+                <li>
+                    <a class="nav-hide" href="#contact">About us</a>
+                </li>
+            </ul>
+            <!--
+            <a class="nav-burger">
+                <ion-icon name="reorder-three"></ion-icon>
+            </a>
+            -->
+        </div>
+    </nav>
+    <section>
+        <div class="row">
+            <h2 class="section-title">Order Confirmation</h2>
+            <div class="conf-grid">
+                <div class="conf-data">
+                    <div class="instructions" id="first">
+                        <h3 class="subtitle">Instructions</h3>
+                        <div class="inner-instructions">
+                            <p class="instruction-step"><span class="bold-500">1.</span> Log in to your bank account and
+                                make a
+                                transfer using data from section below
+                                (copy-paste).</p>
+                            <p class="instruction-step"><span class="bold-500">2.</span> Check your email - we've sent
+                                you
+                                order
+                                confirmation there. If you don't see it remember
+                                to check spam.</p>
+                            <p class="instruction-step"><span class="bold-500">3.</span> We'll start shipping your order
+                                after
+                                receiving your transfer.</p>
+                            <p class="instruction-step"><span class="bold-500">4.</span> Feel free to close this tab after making the transfer, we'll take care of the rest.</p>
+                            <p class="instruction-step"><span class="bold-500">Warning:</span> After not receiving
+                                transfer in 3 days your order will be canceled automatically.</p>
+                        </div>
+                    </div>
+                    <div class="instructions">
+                        <h3 class="subtitle">Transfer Data</h3>
+                        <div class="inner-instructions">
+                            <div class="transfer-line">
+                                <p class="bold-400">Recipient</p>
+                                <p><span id="shop-name">Victor Shop</span>
+                                    <ion-icon onclick="copyText('shop-name')" name="copy-outline"></ion-icon>
+                                </p>
+
+                            </div>
+                            <div class="transfer-line">
+                                <p class="bold-400">Recipient Address</p>
+                                <p><span id="shop-address">ul. Miejska 32, 60-480 Poznan</span>
+                                    <ion-icon onclick="copyText('shop-address')" name="copy-outline"></ion-icon>
+                                </p>
+                            </div>
+                            <div class="transfer-line">
+                                <p class="bold-400">Account Number</p>
+                                <p><span id="account-number">87 1010 1397 0055 0022 2100 0000</span>
+                                    <ion-icon onclick="copyText('account-number')" name="copy-outline"></ion-icon>
+                                </p>
+
+
+                            </div>
+                            <div class="transfer-line">
+                                <p class="bold-400">Amount</p>
+                                <p><span id="amount-to-pay">2013</span> <span class="currency">PLN</span>
+                                    <ion-icon onclick="copyText('amount-to-pay')" name="copy-outline"></ion-icon>
+                                </p>
+                            </div>
+                            <div class="transfer-line">
+                                <p class="bold-400">Title (Order Number)</p>
+                                <p><span id="order-number">256</span>
+                                    <ion-icon onclick="copyText('order-number')" name="copy-outline"></ion-icon>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="conf-summary">
+                    <div class="summary">
+                        <h3 class="summary-title">Summary</h3>
+                        <div class="summary-line">
+                            <p>Mona Lisa</p>
+                            <p>999 <span class="currency">PLN</span></p>
+                        </div>
+                        <div class="summary-line">
+                            <p>Vitruvian Man</p>
+                            <p>999 <span class="currency">PLN</span></p>
+                        </div>
+                        <div class="summary-line">
+                            <p>Shipping</p>
+                            <p>15 <span class="currency">PLN</span></p>
+                        </div>
+                        <div class="summary-line summary-total">
+                            <p>Total</p>
+                            <p>2013 <span class="currency">PLN</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

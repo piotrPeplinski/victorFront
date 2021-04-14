@@ -1,0 +1,238 @@
+/* ------------------------------- */
+/* big tablets/small notebooks (just font size) */
+/* ------------------------------- */
+@media only screen and (max-width: 1200px) {
+
+.row {
+    padding: 0 1.5rem;
+}
+section {
+    padding-bottom: 1.5rem;
+}
+/* PRODUCT */
+.section-product {
+    padding: 2rem 0;
+}
+.section-product .row {
+    padding: 0 2rem;
+}
+.product {
+    padding:0;
+}
+.info {
+    margin-left: 1rem;
+    padding: 1rem 1.5rem;
+}
+.photos {
+    margin-right: 1rem;
+}
+.vIcon {
+    margin-top: -12px;
+    margin-left: -8px;
+    margin-bottom: 0;
+    height: 5rem;
+}
+.detail-price {
+    margin-bottom: 0.7rem;
+}
+.detail-author {
+    font-size: 2.2rem;
+}
+.detail-title {
+    font-size: 3.2rem;
+}
+.section-product .btn {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+}
+
+/* ------------------------------- */
+/* ipad */
+/* ------------------------------- */
+@media only screen and (max-width: 1023px) {
+/*CONFIRMATION*/
+.conf-data {
+    padding-right: 2.4rem;
+}
+.inner-instructions {
+    padding: 0;
+}
+.transfer-line {
+    font-size: 1.7rem;
+} 
+.conf-data {
+    flex: 2;
+}
+.conf-summary {
+    flex: 1;
+}
+/* PRODUCT */
+.info {
+    padding: 1rem;
+}
+#painting-header,
+#author-header {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+.painting-desc {
+    font-size: 1.55rem;
+}
+
+
+}
+
+/* ------------------------------- */
+/* iphone 6/7/8 */
+/* ------------------------------- */
+@media only screen and (max-width: 767px) {
+html,body {
+    font-size: 9px;
+}
+.section-title{
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+/* NAV */
+.nav-burger {
+    display: flex;
+    padding-right: 8px;
+    padding-top: 17px;
+}
+.nav-wrapper {
+    align-items: flex-start;
+}
+.main-nav {
+    display: none;
+    flex-direction: column;
+    padding-top: 1rem;
+    
+    /* display: none; */
+}
+.main-nav li {
+    margin-bottom: 1rem;
+}
+/* CART */
+.cart-grid {
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+.cart-products {
+    flex: 1;
+    padding-right: 0;
+}
+.cart-item {
+    justify-content: space-between;
+}
+
+.specification {
+    flex: 2;
+}
+.cart-summary {
+    flex: 1;
+}
+/*CONFIRMATION*/
+.conf-grid {
+    flex-direction: column;
+}
+.conf-data {
+    padding: 0;
+}
+#first {
+    margin-bottom: 2rem;
+}
+.instructions:last-child {
+    margin-bottom: 1.5rem;
+}
+.instructions ion-icon {
+    font-size: 2rem;
+    margin-left: 0.2rem;
+}
+.instruction-step {
+    font-size: 1.75rem;
+}
+.transfer-line {
+    flex-direction: column;
+    font-size: 1.75rem;
+}
+/* PRODUCT */
+.product {
+    flex-direction: column;
+}
+.photos {
+    padding: 0;
+}
+.info {
+    margin: 0;
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+.vIcon {
+    height: 4.3rem;
+}
+.detail-author {
+    font-size: 1.9rem;
+}
+.detail-title {
+    font-size: 2.8rem;
+}
+/* SHIPPING */
+.section-shipping .summary {
+    margin-top: 2rem;
+}
+/* SHOP */
+.col-4 {
+    width: 100%;
+}
+h1 {
+    font-size: 5.5rem;
+}
+}
+
+/* ------------------------------- */
+/* small phones */
+/* ------------------------------- */
+@media only screen and (max-width: 374px) {
+    html,
+    body {
+        font-size: 8px;
+    }
+    /* NAV */
+    nav img {
+        width: 14rem;
+    }
+    .nav-burger {
+        padding-top: 12px;
+    }
+    .main-nav li a {
+        margin: 0;
+    }
+    /* CONFIRMATION */
+    .transfer-line,
+    .instruction-step {
+        font-size: 1.5rem;
+    }
+    /* PRODUCT */
+    .painting-desc {
+        font-size: 1.4rem;
+    }
+    .detail-author {
+        font-size: 1.75rem;
+    }
+    .detail-title {
+        font-size: 2.5rem;
+    }
+    /* SHIPPING */
+    label {
+        font-size: 1.45rem;
+    }
+    .line-item:first-child {
+        margin-right: 0.5rem;
+        
+    }
+    .line-item:last-child {
+        margin-left: 0.5rem;
+    }
+}
