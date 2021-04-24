@@ -483,3 +483,77 @@ label {
     outline: none;
     box-shadow: none;
 }
+/*-----------------------------*/
+/* FOOTER */
+/*-----------------------------*/
+footer {
+    background-color: #111;
+    color: white;
+    padding: 4rem 0;
+}
+footer .row img {
+    width: 12rem;
+    padding: 0;
+}
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    padding:0;
+}
+.footer-links {
+    display: flex;
+}
+.footer-row:not(:first-child):not(:last-child) {
+    margin: 3.5rem 0;
+}
+.link-col:last-child {
+    margin-left: 8rem;
+}
+.link-col h4 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+}
+.link-col li {
+    font-size: 1.37rem;
+    margin-top: 0.75rem;
+    font-weight: 300;
+}
+.link-col a {
+    color: #a2a2a2;
+    transition: all 0.4s;
+}
+.link-col a:hover {
+    color: #e6e6e6;
+}
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 1.6rem;
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    color: #a2a2a2;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+.footer-contact ion-icon {
+    color: #e6e6e6;
+    font-size: 1.7rem;
+    margin-right: 0.8rem;
+    margin-bottom: -3px;
+}
+.footer-text {
+    font-size: 1.6rem;
+    color: #ccc;
+}
+.programmer-link {
+    color: #ccc;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 0.2rem;
+    transition: all 0.4s;
+}
+.programmer-link:hover {
+    color: #f7f7f7;
+    border-bottom: 1px solid  #f7f7f7;
+}
