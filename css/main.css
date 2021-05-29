@@ -52,12 +52,13 @@ section {
     font-size: 2.2rem;
     font-weight: 300;
     outline: none;
+    transition: all .4s;
 }
 .btn-white:link,
 .btn-white:visited {
     border: 2px solid white;
     color: white;
-    transition: all .5s;
+    
     
 }
 .btn-white:hover,
@@ -70,7 +71,6 @@ section {
 .btn-black:link,
 .btn-black:visited {
     border: 2px solid black;
-    transition: all .5s;
     box-shadow: none;
 }
 .btn-black:hover,
@@ -164,14 +164,38 @@ h1 {
     margin-left: 0.9rem;
 }
 /* SHOP */
+.row.row-prd {
+    justify-content: space-between;
+}
+.col-prd {
+    flex: 0 0 30%;
+}
+.prd-link,
+.prd-link:hover {
+    color: black;
+    position: relative;
+}
+.prd-link::after {
+    margin: 0 auto;
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: black;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    transition: all 0.4s;
+}
+.prd-link:hover::after {
+    width: 60%;
+}
 .section-shop {
     margin: 0;
     
 }
 .product-box {
-    width: 85%;
-    margin: 0 auto;
-    margin-bottom: 2rem;
+    width: 100%;
+    margin-bottom: 3rem;
 }
 .product-box img {
     width: 100%;
@@ -548,12 +572,39 @@ footer .row img {
     color: #ccc;
 }
 .programmer-link {
+    display: inline-block;
     color: #ccc;
     border-bottom: 1px solid transparent;
     padding-bottom: 0.2rem;
     transition: all 0.4s;
 }
-.programmer-link:hover {
-    color: #f7f7f7;
-    border-bottom: 1px solid  #f7f7f7;
+.programmer-link::after {
+    margin: 0 auto;
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #eee;
+    transition: all 0.4s;
+    
 }
+.programmer-link:hover::after {
+    width: 100%;
+}
+.programmer-link:hover {
+    color: #eee;
+}
+/*.prd-link::after {
+    margin: 0 auto;
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: black;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    transition: all 0.4s;
+}
+.prd-link:hover::after {
+    width: 60%;
+}*/
