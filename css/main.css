@@ -234,11 +234,14 @@ h1 {
 }
 .photos {
     margin-right: 1.5rem;
+    height: fit-content;
 }
 .info {
     margin-left: 1.5rem;
     background-color: #fff;
     padding: 1rem 2rem 2rem 2rem;
+    overflow-y: scroll;
+    max-height: 648.22px;
 }
 .detail-title {
     font-size: 4rem;
