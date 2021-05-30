@@ -594,17 +594,38 @@ footer .row img {
 .programmer-link:hover {
     color: #eee;
 }
-/*.prd-link::after {
-    margin: 0 auto;
-    content: "";
-    display: block;
-    width: 0px;
-    height: 2px;
-    background-color: black;
-    margin-top: -2rem;
-    margin-bottom: 2rem;
-    transition: all 0.4s;
+/*-----------------------------*/
+/* CONTACT */
+/*-----------------------------*/
+.contact-grid {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #efefef;
+    padding: 0;
+    padding-top: 2rem;
 }
-.prd-link:hover::after {
-    width: 60%;
-}*/
+.contact-grid form {
+    flex: 0 0 calc(68% - 1.3rem);
+}
+.shipping-line.full-line {
+    display: flex;
+    flex-direction: column;
+}
+.full-line textarea {
+    height: 20rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 20px 2px #e6e6e6;
+    transition: all .5s;
+    width: 100%;
+}
+.full-line textarea:focus {
+    box-shadow: 0 0 20px 3px #cdcdcd;
+}
+.contact-grid .footer-contact {
+    flex: 0 0 calc(32% - 1.3rem);
+    height: 12rem;
+    
+}
