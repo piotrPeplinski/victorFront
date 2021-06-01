@@ -523,6 +523,7 @@ footer {
 footer .row img {
     width: 12rem;
     padding: 0;
+    height: 100%;
 }
 .footer-row {
     display: flex;
