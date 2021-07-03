@@ -56,6 +56,11 @@
     .contact-grid .footer-contact {
         flex: 0 0 calc(35% - 1.3rem);
     }
+    /* ARTICLES */
+    .articles-col {
+        flex: 0 0 calc(50% - 1.5rem);
+        margin-bottom: 2rem;
+    }
 }
 
 /* ------------------------------- */
@@ -143,6 +148,13 @@
     .cart-grid {
         flex-direction: column;
         align-items: stretch;
+    }
+    .empty-cart {
+        font-size: 2.5rem;
+    }
+    .empty-cart ion-icon {
+        font-size: 3rem;
+        margin-bottom: -5.5px;
     }
     .cart-products {
         flex: 1;
@@ -249,6 +261,16 @@
     .contact-grid .shipping-line {
         margin-bottom: 1rem;
     }
+    /* ORDERS */
+    .orders-col {
+        flex: 0 0 100%;
+        margin-top: 2rem;
+    }
+    /* ARTICLES */
+    .articles-col {
+        flex: 0 0 100%;
+    }
+    
 }
 
 /* ------------------------------- */
@@ -295,4 +317,5 @@
     .line-item:last-child {
         margin-left: 0.5rem;
     }
+    
 }

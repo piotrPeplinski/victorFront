@@ -635,3 +635,128 @@ footer .row img {
     height: 12rem;
     
 }
+/*-----------------------------*/
+/* ORDERS */
+/*-----------------------------*/
+.orders-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: calc(100vw - 4rem);
+    margin: 0 auto;
+}
+.orders-col {
+    flex: 0 0 calc(33% - 2rem);
+    margin-top: 4rem;
+}
+.order {
+    border: 2px solid black;
+    padding: 0.5rem;
+}
+.order p {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.order h4 {
+    font-size: 2.5rem;
+}
+.paid-yes {
+    color: #2adc35;
+    font-weight: 600;
+}
+.paid-no {
+    color: red;
+}
+.orders-nav {
+    display: inline-block;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.order ol li {
+    list-style: decimal;
+    font-size: 2rem;
+    font-weight: 500;
+}
+/*-----------------------------*/
+/* ARTICLES */
+/*-----------------------------*/
+.articles-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 2rem;
+    position: relative;
+}
+.articles-row::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    content: " ";
+    width: calc(100% - 2rem);
+    height: 1px;
+    background-color:#dee2e6;
+    transition: all 0.4s;
+}
+.articles-col {
+    flex: 0 0 calc(50% - 3rem);
+    margin-bottom: 4rem;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+    padding: 1rem;
+}
+.articles-col::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    z-index: -1;
+    transition: all 0.5s;
+    opacity: 0;
+    
+}
+.articles-col:hover::after {
+    opacity: 1;
+    height: 100%;
+}
+.articles-col:hover .article-title,
+.articles-col:hover .article-date,
+.articles-col:hover .article-text {
+    color: #ddd;
+}
+.articles-row:hover::before {
+    width: 100%;
+    left: 0;
+}
+.article-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    width: fit-content;
+    padding-bottom: 0.3rem;
+    transition: all 0.5s;
+   
+}
+.article-date {
+    font-size: 1.8rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    transition: all 0.8s;
+}
+.article-text {
+    font-weight: 300;
+    font-size: 1.6rem;
+    text-align: justify;
+    transition: all 0.8s;
+}
+.articles-col a {
+    color: black;
+}
