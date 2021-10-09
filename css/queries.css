@@ -61,6 +61,10 @@
         flex: 0 0 calc(50% - 1.5rem);
         margin-bottom: 2rem;
     }
+    /* ABOUT US */
+    .about-text {
+        font-size: 1.8rem;
+    }
 }
 
 /* ------------------------------- */
@@ -280,8 +284,57 @@
     .text {
         font-size: 1.8rem;
     }
+    /* ABOUT US */
+    .about-text { 
+        font-size: 1rem;
+        text-align: justify;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .person-row {
+        flex-wrap: wrap;
+    }
+    .person-col {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .person-col img {
+        filter: brightness(100%);
+    }
+    
+    .second .person-col:first-child {
+        margin-right: 0;
+    }
+    .second .person-col:last-child {
+        margin-left: 0;
+    }
+    .person-row {
+        margin-bottom: 1.5rem;
+    }
+    .second {
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    #last-person {
+        margin: 0 auto;
+        margin-top: 1.5rem;
+    }
+    .person-name {
+        font-size: 1.4rem;
+    }
+    .person-role {
+        font-size: 1.3rem;
+    }
+    .person-info {
+        padding: 0.6rem;
+    }
 }
-
+/* REMOVING HOVER EFFECTS ON MOBILE */
+@media (hover: none) {
+    .person-col:hover {
+        transform: scale(1);
+        box-shadow: 0 0 18px 3px #bbb;
+    }
+}
 /* ------------------------------- */
 
 /* small phones */

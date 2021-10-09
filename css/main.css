@@ -786,3 +786,71 @@ footer .row img {
     font-size: 2rem;
     text-align: justify;
 }
+/* ---------------------------- */
+/* ABOUT US */
+/* ---------------------------- */
+.person-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 3.75rem;
+}
+.second {
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.second .person-col:first-child {
+    margin-right: 1.875rem;
+}
+.second .person-col:last-child {
+    margin-left: 1.875rem;
+}
+.person-col {
+    flex: 0 0 calc(33.33% - 2.5rem);
+    box-shadow: 0 0 18px 3px #bbb;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: all 0.4s;
+}
+.person-col img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    filter: brightness(87%);
+    transition: all 0.4s;
+}
+.person-name {
+    font-size: 2rem;
+    font-weight: 400;
+}
+.person-role {
+    font-size: 1.6rem;
+    color: #666;
+}
+.person-info {
+    background-color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 0.8rem;
+}
+.person-col:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 4px #999;
+}
+.person-col:hover img {
+    filter: brightness(100%);
+}
+.about-text {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 2.5rem;
+}
+.person-col a {
+    color: black;
+}
