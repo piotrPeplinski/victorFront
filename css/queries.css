@@ -327,6 +327,11 @@
     .person-info {
         padding: 0.6rem;
     }
+    /* ARTISTS */
+    .artist-name {
+        font-size: 2.05rem;
+        margin-bottom: 1.5rem;
+    }
 }
 /* REMOVING HOVER EFFECTS ON MOBILE */
 @media (hover: none) {

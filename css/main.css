@@ -168,9 +168,12 @@ h1 {
 /* SHOP */
 .row.row-prd {
     justify-content: space-between;
+    padding: 0;
+
 }
 .col-prd {
     flex: 0 0 30%;
+    padding: 0;
 }
 .prd-link,
 .prd-link:hover {
@@ -853,4 +856,15 @@ footer .row img {
 }
 .person-col a {
     color: black;
+}
+/* ---------------------------- */
+/* ARTISTS */
+/* ---------------------------- */
+.artist-name {
+    font-size: 2.5rem;
+    padding: 0;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #c4c4c4;
+    width: fit-content;
+    margin-bottom: 2rem;
 }
