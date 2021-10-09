@@ -74,6 +74,10 @@
 /* ------------------------------- */
 
 @media only screen and (max-width: 1023px) {
+    /* NAV */
+    .main-nav {
+        min-width: 500px;
+    }
     /*CONFIRMATION*/
     .conf-data {
         padding-right: 2.4rem;
@@ -143,6 +147,8 @@
         display: none;
         flex-direction: column;
         padding-top: 1rem;
+        min-width: 100px;
+        justify-content: flex-start;
         /* display: none; */
     }
     .main-nav li {
