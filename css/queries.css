@@ -137,22 +137,35 @@
     /* NAV */
     .nav-burger {
         display: flex;
-        padding-right: 8px;
-        padding-top: 17px;
     }
     .nav-wrapper {
         align-items: flex-start;
+        flex-direction: column;
     }
     .main-nav {
         display: none;
         flex-direction: column;
-        padding-top: 1rem;
         min-width: 100px;
         justify-content: flex-start;
+        text-align: center;
+        width: 100%;
         /* display: none; */
     }
     .main-nav li {
-        margin-bottom: 1rem;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #c4c4c4;
+    }
+    .main-nav li:last-child {
+        border-bottom: none;
+    }
+    .main-nav li:first-child {
+        border-top: 1px solid #c4c4c4;
+    }
+    .mobile-adj {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
     }
     /* CART */
     .cart-grid {
