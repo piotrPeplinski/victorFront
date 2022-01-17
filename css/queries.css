@@ -305,13 +305,14 @@
     }
     /* ABOUT US */
     .about-text { 
-        font-size: 1rem;
+        font-size: 1.25rem;
         text-align: justify;
         padding-bottom: 0.5rem;
         margin-bottom: 1rem;
     }
     .person-row {
         flex-wrap: wrap;
+        margin-bottom: 2rem;
     }
     .person-col {
         flex: 0 0 calc(50% - 1rem);
@@ -325,18 +326,11 @@
     }
     .second .person-col:last-child {
         margin-left: 0;
-    }
-    .person-row {
-        margin-bottom: 1.5rem;
-    }
+    } 
     .second {
         justify-content: space-between;
         margin-bottom: 0;
-    }
-    #last-person {
-        margin: 0 auto;
-        margin-top: 1.5rem;
-    }
+    } 
     .person-name {
         font-size: 1.4rem;
     }
@@ -350,6 +344,28 @@
     .artist-name {
         font-size: 2.05rem;
         margin-bottom: 1.5rem;
+    }
+    /* LANGUAGE */
+    .dropdown {
+        display: flex;
+        justify-content: center;
+    }
+    .dropdown ion-icon {
+        display: none;
+    }
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+    .main-nav li a.lang-mobile {
+        display: flex;
+        padding: 0;
+        border: none;
+    }
+    .current {
+        display: none;
+    }
+    .lang img {
+        width: 2.5rem;
     }
 }
 /* REMOVING HOVER EFFECTS ON MOBILE */
